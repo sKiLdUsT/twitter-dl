@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+div#loader {
+    background-color: #000;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.valign-wrapper {
+    width: 100%;
+    height: 100%;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+#main_content{
+    transition:all 2s ease
+}
+
+#fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+img.responsive-img {
+    max-width: 60%;
+}
+#c_content img, iframe {
+    max-height: 50vh;
+}
