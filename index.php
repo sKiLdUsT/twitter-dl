@@ -166,7 +166,7 @@ switch( $request )
                                    Created ©2016-2017 by <a target="_blank" href="https://skildust.com" class="pink-text">sKiLdUsT</a>
                                </p>
                                <p>
-                                   <b>Version 1.0 (<?php echo $hash ?>)</b>
+                                   <b>Version 1.1 (<?php echo $hash ?>)</b>
                                </p>
                            </div>
                         </div>
