@@ -23,7 +23,7 @@ switch( $request )
         \Codebird\Codebird::setConsumerKey($_ENV["CONSUMER_KEY"], $_ENV["CONSUMER_SECRET"]);
         $cb = \Codebird\Codebird::getInstance();
         $cb->setToken($_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
-        $data = $cb->statuses_show_ID('id='.$id);
+        $data = $cb->statuses_show_ID(["id" => $id, "tweet_mode" => "extended"]);
         if($data->extended_entities){
             if($data->extended_entities->media[0]->type == 'animated_gif')
             {
